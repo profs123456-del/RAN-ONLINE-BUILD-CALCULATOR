@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAN Online Build Calculator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-header">
+
+    <img src="./logo.png" alt="Guild Logo" class="app-logo">
+
+    <h1 class="app-title">RAN BUILD CALCULATOR</h1>
+
+    <img src="./ran_online_logo.png" alt="RAN Online" class="ran-online-logo">
+
+</div>
+
+<div class="calculator">
+
+
+    <!-- =========================
+         STAT BOX (floating, left column)
+    ========================= -->
+
+    <div class="left-side">
+
+        <section class="stats-box">
+
+            <!-- Class key art, faded in behind the whole Stats panel —
+                 only the active class's art shows (toggled by
+                 setActiveSkillClass in script.js via a "<class>-active"
+                 class on this section). Picking BRAWLER automatically
+                 swaps this in. -->
+
+            <img
+                src="./brawler_astig.png"
+                alt=""
+                class="stats-class-bg stats-brawler-bg"
+                aria-hidden="true">
+
+            <img
+                src="./archer_astig.png"
+                alt=""
+                class="stats-class-bg stats-archer-bg"
+                aria-hidden="true">
+
+            <img
+                src="./shaman_astig.png"
+                alt=""
+                class="stats-class-bg stats-shaman-bg"
+                aria-hidden="true">
+
+            <img
+                src="./swordsman_astig.png"
+                alt=""
+                class="stats-class-bg stats-swordsman-bg"
+                aria-hidden="true">
+
+            <img
+                src="./gunner_astig.png"
+                alt=""
+                class="stats-class-bg stats-gunner-bg"
+                aria-hidden="true">
+
+            <img
+                src="./extreme_astig.png"
+                alt=""
+                class="stats-class-bg stats-extreme-bg"
+                aria-hidden="true">
+
+            <!-- =========================
+                 WINDOW HEADER — matches the Skills
+                 window's title bar so both panels read
+                 as the same kind of HUD window.
+            ========================= -->
+
+            <div class="stats-box-header">
+
+                <span class="stats-box-title">
+                    Character
+                </span>
+
+            </div>
+
+            <div class="stats-box-body">
+
+            <!-- =========================
+                 CLASS (mirrors the quickbar on the right —
+                 pick a class from here too, stays in sync)
+            ========================= -->
+
+            <div class="class-standalone">
+
+                <div class="class-header" id="classHeader">
+
+                    <span class="class-arrow" id="classArrow">
+                        ▶
+                    </span>
+
+                    <span class="class-title">
+                        CLASS:
+                    </span>
+
+                    <span class="class-current" id="classCurrent">
+                    </span>
+
+                </div>
+
+                <div class="class-list collapsed" id="classList">
+
+                    <button type="button" class="class-btn" data-class="brawler">Brawler</button>
+                    <button type="button" class="class-btn" data-class="swordsman">Swordsman</button>
+                    <button type="button" class="class-btn" data-class="archer">Archer</button>
+                    <button type="button" class="class-btn" data-class="shaman">Shaman</button>
+                    <button type="button" class="class-btn" data-class="gunner">Gunner</button>
+                    <button type="button" class="class-btn" data-class="extreme">Extreme</button>
+
+                </div>
+
+            </div>
+
+            <!-- =========================
+                 EPISODE (filters the Skills window to only the
+                 level range for the chosen episode — same
+                 collapsible pattern as CLASS above, applies on
+                 top of whichever class tab is currently open)
+            ========================= -->
+
+            <div class="class-standalone">
+
+                <div class="class-header" id="episodeHeader">
+
+                    <span class="class-arrow" id="episodeArrow">
+                        ▶
+                    </span>
+
+                    <span class="class-title">
+                        EPISODE:
+                    </span>
+
+                    <span class="class-current" id="episodeCurrent">
+                    </span>
+
+                </div>
+
+                <div class="class-list collapsed" id="episodeList">
+
+                    <button type="button" class="episode-btn" data-episode="ep2">Episode 2</button>
+                    <button type="button" class="episode-btn" data-episode="ep3">Episode 3</button>
+                    <button type="button" class="episode-btn" data-episode="ep4">Episode 4</button>
+                    <button type="button" class="episode-btn" data-episode="ep5">Episode 5</button>
+                    <button type="button" class="episode-btn" data-episode="ep6">Episode 6</button>
+                    <button type="button" class="episode-btn" data-episode="ep6_1">Episode 6.1</button>
+                    <button type="button" class="episode-btn" data-episode="ep7">Episode 7</button>
+
+                </div>
+
+            </div>
+
+            <div class="stats-grid">
+
+
+                <!-- LEFT STATS -->
+
+                <div class="stat-column">
+
+                    <div class="stat-row" data-stat="pow">
+
+                        <span class="stat-name">
+                            Pow
+                        </span>
+
+                        <input
+                            type="number"
+                            class="stat-base-input"
+                            id="statBase-pow"
+                            value="0">
+
+                        <span class="stat-paren">(+<input
+                            type="number"
+                            class="stat-allocated-input"
+                            id="statAllocated-pow"
+                            value="0"><span class="stat-stepper">
+                                <button type="button" class="stepper-btn stepper-up" data-stat="pow" aria-label="Increase Pow">▲</button>
+                                <button type="button" class="stepper-btn stepper-down" data-stat="pow" aria-label="Decrease Pow">▼</button>
+                            </span>)</span>
+
+                    </div>
+
+
+                    <div class="stat-row" data-stat="dex">
+
+                        <span class="stat-name">
+                            Dex
+                        </span>
+
+                        <input
+                            type="number"
+                            class="stat-base-input"
+                            id="statBase-dex"
+                            value="0">
+
+                        <span class="stat-paren">(+<input
+                            type="number"
+                            class="stat-allocated-input"
+                            id="statAllocated-dex"
+                            value="0"><span class="stat-stepper">
+                                <button type="button" class="stepper-btn stepper-up" data-stat="dex" aria-label="Increase Dex">▲</button>
+                                <button type="button" class="stepper-btn stepper-down" data-stat="dex" aria-label="Decrease Dex">▼</button>
+                            </span>)</span>
+
+                    </div>
+
+
+                    <div class="stat-row" data-stat="int">
+
+                        <span class="stat-name">
+                            Int
+                        </span>
+
+                        <input
+                            type="number"
+                            class="stat-base-input"
+                            id="statBase-int"
+                            value="0">
+
+                        <span class="stat-paren">(+<input
+                            type="number"
+                            class="stat-allocated-input"
+                            id="statAllocated-int"
+                            value="0"><span class="stat-stepper">
+                                <button type="button" class="stepper-btn stepper-up" data-stat="int" aria-label="Increase Int">▲</button>
+                                <button type="button" class="stepper-btn stepper-down" data-stat="int" aria-label="Decrease Int">▼</button>
+                            </span>)</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT STATS -->
+
+                <div class="stat-column">
+
+                    <div class="stat-row" data-stat="vit">
+
+                        <span class="stat-name">
+                            Vit
+                        </span>
+
+                        <input
+                            type="number"
+                            class="stat-base-input"
+                            id="statBase-vit"
+                            value="0">
+
+                        <span class="stat-paren">(+<input
+                            type="number"
+                            class="stat-allocated-input"
+                            id="statAllocated-vit"
+                            value="0"><span class="stat-stepper">
+                                <button type="button" class="stepper-btn stepper-up" data-stat="vit" aria-label="Increase Vit">▲</button>
+                                <button type="button" class="stepper-btn stepper-down" data-stat="vit" aria-label="Decrease Vit">▼</button>
+                            </span>)</span>
+
+                    </div>
+
+
+                    <!-- =========================
+                         HP (new stat, boxed) —
+                         placed here in Stm's old spot
+                    ========================= -->
+
+                    <div class="stat-hp-box">
+
+                        <span class="stat-hp-label">
+                            HP:
+                        </span>
+
+                        <input
+                            type="number"
+                            class="stat-hp-input"
+                            id="statHP"
+                            value="0">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 LEVEL / POINT — unified card, one
+                 accent color, divided into two
+                 cells. Reset Stat spans full width
+                 below as its own (warning-colored)
+                 action, separate from the readout.
+            ========================= -->
+
+            <div class="stat-summary-card">
+
+                <div class="stat-summary-cell">
+
+                    <div class="stat-summary-label">
+
+                        <span class="stat-summary-arrow">
+                            ▶
+                        </span>
+
+                        Character Level
+
+                        <span class="stat-summary-arrow">
+                            ◀
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="number"
+                        class="stat-summary-input"
+                        id="charLevel"
+                        value="1">
+
+                </div>
+
+                <div class="stat-summary-divider"></div>
+
+                <div class="stat-summary-cell">
+
+                    <div class="stat-summary-label">
+
+                        <span class="stat-summary-arrow">
+                            ▶
+                        </span>
+
+                        Stat Point
+
+                        <span class="stat-summary-arrow">
+                            ◀
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="number"
+                        class="stat-summary-input"
+                        id="pointValue"
+                        value="0">
+
+                </div>
+
+            </div>
+
+            <div class="stat-actions-row">
+
+                <button type="button" class="reset-stat-btn" id="resetStatBtn">
+                    Reset Stat
+                </button>
+
+                <button type="button" class="save-build-btn" id="saveBuildBtn">
+                    <span class="save-build-icon" aria-hidden="true">&#128190;</span>
+                    Save Build
+                </button>
+
+            </div>
+
+            <!-- Filled in right after a save: items + skills just
+                 got cleared, so this confirms how many Stat Points
+                 and Skill Points are free for the next build -->
+
+            <div class="save-build-status" id="saveBuildStatus"></div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =========================
+             SELECTED ITEMS (floats below
+             the calculator; live picture,
+             name & bonus for every pick)
+        ========================= -->
+
+        <section class="selected-box">
+
+            <div class="selected-columns">
+
+                <div class="selected-column">
+
+                    <div class="selected-title">
+                        Selected Pandaya Items
+                    </div>
+
+                    <!-- JavaScript fills this in as items are picked -->
+                    <div
+                        class="selected-list"
+                        id="selectedList">
+                    </div>
+
+                </div>
+
+                <div class="selected-column">
+
+                    <div class="selected-title">
+                        Skill Learned
+                    </div>
+
+                    <!-- JavaScript fills this in as skills are learned -->
+                    <div
+                        class="selected-list"
+                        id="skillLearnedList">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- =========================
+         PANDAYA  ITEMS (next to calculator)
+    ========================= -->
+
+    <section class="pandaya-box">
+
+        <div class="pandaya-title-row">
+
+            <div class="pandaya-title">
+                Pandaya  Items
+            </div>
+
+            <div class="pandaya-search">
+
+                <input
+                    type="text"
+                    class="pandaya-search-input"
+                    id="pandayaSearchInput"
+                    placeholder="Search items..."
+                    autocomplete="off">
+
+                <button
+                    type="button"
+                    class="pandaya-search-clear"
+                    id="pandayaSearchClear"
+                    aria-label="Clear search">
+                    ✕
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Shown only when a search matches nothing -->
+        <div class="pandaya-search-empty" id="pandayaSearchEmpty">
+            No items match your search.
+        </div>
+
+        <!-- JavaScript creates all Pandaya cards here -->
+        <div
+            class="pandaya-list"
+            id="pandayaList">
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CHARACTER SKILLS (right column)
+    ========================= -->
+
+    <section class="right-blank">
+
+        <!-- Quick access buttons: "Skills" opens/closes the
+             window below; Dex/Str/Int/Etc open it straight
+             to that tab. -->
+
+        <div class="skills-quickbar">
+
+            <button type="button" class="skills-toggle-btn" id="skillsToggleBtn">
+                <span class="skills-toggle-title">Skills</span>
+            </button>
+
+            <div class="skills-classlist collapsed" id="skillsClasslist">
+
+                <button type="button" class="skills-quick-btn" data-class="brawler">
+                    Brawler
+                </button>
+
+                <button type="button" class="skills-quick-btn" data-class="swordsman">
+                    Swordsman
+                </button>
+
+                <button type="button" class="skills-quick-btn" data-class="archer">
+                    Archer
+                </button>
+
+                <button type="button" class="skills-quick-btn" data-class="shaman">
+                    Shaman
+                </button>
+
+                <button type="button" class="skills-quick-btn" data-class="gunner">
+                    Gunner
+                </button>
+
+                <button type="button" class="skills-quick-btn" data-class="extreme">
+                    Extreme
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Floating-style Skills window (toggled open/closed) -->
+
+        <div class="skills-window" id="skillsWindow">
+
+            <div class="skills-window-header">
+
+                <span class="skills-window-title">
+                    Skill
+                </span>
+
+                <span class="skills-window-class" id="skillsWindowClass">
+                </span>
+
+                <button type="button" class="skills-window-reset" id="skillsResetBtn">
+                    Reset Skill
+                </button>
+
+                <button type="button" class="skills-window-close" id="skillsCloseBtn" aria-label="Close Skills">
+                    ✕
+                </button>
+
+            </div>
+
+            <!-- These 4 tabs filter whichever class's skill list is
+                 currently open (picked via the quickbar above). For
+                 most classes they're SKILL TYPES (Dex/Pow/Int/Etc);
+                 for Extreme they're swapped by JS to the base class
+                 each skill came from (Brawler/Swordsman/Archer/Shaman). -->
+
+            <div class="skills-window-tabs" id="skillsWindowTabs">
+
+                <button type="button" class="skills-window-tab active" data-type="dex">
+                    Dex
+                </button>
+
+                <button type="button" class="skills-window-tab" data-type="pow">
+                    Pow
+                </button>
+
+                <button type="button" class="skills-window-tab" data-type="int">
+                    Int
+                </button>
+
+                <button type="button" class="skills-window-tab" data-type="etc">
+                    Etc
+                </button>
+
+            </div>
+
+            <!-- JavaScript fills this in with the active class's skills,
+                 filtered to the active skill-type tab above -->
+
+            <div class="skills-window-list" id="skillsWindowList">
+            </div>
+
+            <div class="skills-window-footer">
+
+                <span>
+                    Skill Points
+                </span>
+
+                <input
+                    type="number"
+                    class="skills-points-input"
+                    id="skillPoints"
+                    value="0">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NEW PANEL (reserved area)
+    ========================= -->
+
+    <section class="new-panel" aria-label="Build Summary Panel">
+
+        <div class="new-panel-title-row">
+
+            <div class="new-panel-title">
+                Build Preview
+            </div>
+
+            <span class="new-panel-count" id="buildPreviewCount"></span>
+
+        </div>
+
+        <!-- Shown only when no build has been saved yet -->
+        <div class="new-panel-empty" id="buildPreviewEmpty">
+
+            <span class="new-panel-empty-text">
+                No build saved yet. Set up your stats, items and skills, then hit "Save Build" to record them here.
+            </span>
+
+        </div>
+
+        <!-- JavaScript inserts every saved build snapshot here -->
+        <div class="new-panel-list" id="buildPreviewList">
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INVENTORY (equipment slots —
+         vehicle, weapons, armor, accessories)
+    ========================= -->
+
+    <section class="inventory-box" aria-label="Inventory Panel">
+
+        <!-- Class silhouette, faded in behind the Inventory grid — only
+             the active class's image shows (toggled by setActiveSkillClass
+             in script.js via a "<class>-active" class on this section) -->
+        <img
+            src="./brawler_sil.png"
+            alt=""
+            class="inventory-class-sil inventory-brawler-sil"
+            aria-hidden="true">
+
+        <img
+            src="./archer_sil.png"
+            alt=""
+            class="inventory-class-sil inventory-archer-sil"
+            aria-hidden="true">
+
+        <img
+            src="./shaman_sil.png"
+            alt=""
+            class="inventory-class-sil inventory-shaman-sil"
+            aria-hidden="true">
+
+        <img
+            src="./swordsman_sil.png"
+            alt=""
+            class="inventory-class-sil inventory-swordsman-sil"
+            aria-hidden="true">
+
+        <img
+            src="./gunner_sil.png"
+            alt=""
+            class="inventory-class-sil inventory-gunner-sil"
+            aria-hidden="true">
+
+        <img
+            src="./extreme_sil.png"
+            alt=""
+            class="inventory-class-sil inventory-extreme-sil"
+            aria-hidden="true">
+
+        <div class="inventory-title">
+            Inventory
+        </div>
+
+        <div class="inventory-content">
+
+            <div class="inventory-columns">
+
+                <div class="inventory-col inventory-col-left">
+
+                    <div class="inv-slot inv-slot-single" data-slot="vehicle">
+                        <span class="inv-slot-label">Vehicle</span>
+                    </div>
+
+                    <div class="inv-pair-grid">
+
+                        <div class="inv-slot" data-slot="weapon">
+                            <span class="inv-slot-label">Weapon Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="weapon2">
+                            <span class="inv-slot-label">Weapon</span>
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="inv-pair-grid">
+
+                        <div class="inv-slot" data-slot="rosary1">
+                            <span class="inv-slot-label">Rosary Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="rosary2">
+                            <span class="inv-slot-label">Rosary</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="earring1">
+                            <span class="inv-slot-label">Earring Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="earring2">
+                            <span class="inv-slot-label">Earring</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="ring1">
+                            <span class="inv-slot-label">Ring Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="ring2">
+                            <span class="inv-slot-label">Ring</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="ring3">
+                            <span class="inv-slot-label">Ring Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="ring4">
+                            <span class="inv-slot-label">Ring</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="inventory-col inventory-col-right">
+
+                    <div class="inv-pair-grid">
+
+                        <div class="inv-slot" data-slot="head2">
+                            <span class="inv-slot-label">Head</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="head1">
+                            <span class="inv-slot-label">Head Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="upper2">
+                            <span class="inv-slot-label">Upper</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="upper1">
+                            <span class="inv-slot-label">Upper  Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="pants2">
+                            <span class="inv-slot-label">Pants</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="pants1">
+                            <span class="inv-slot-label">Pants Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="gloves2">
+                            <span class="inv-slot-label">Gloves</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="gloves1">
+                            <span class="inv-slot-label">Gloves Costume</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="shoes2">
+                            <span class="inv-slot-label">Shoes</span>
+                        </div>
+
+                        <div class="inv-slot" data-slot="shoes1">
+                            <span class="inv-slot-label">Shoes  Costume</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+
+<!-- External JavaScript -->
+<script src="./script.js"></script>
+
+</body>
+
+</html>
