@@ -804,6 +804,42 @@
 </div>
 
 
+<!-- =========================================
+     WELCOME GUIDE POPUP
+     Shown once on first visit (or whenever the user hasn't
+     opted out). Dismiss with X/backdrop click just hides it
+     for this visit; "Don't show again" remembers the choice
+     via localStorage.
+========================================= -->
+<div class="welcome-guide-overlay" id="welcomeGuideOverlay">
+
+    <div class="welcome-guide-box">
+
+        <button class="welcome-guide-close" id="welcomeGuideClose" aria-label="Close">×</button>
+
+        <h2 class="welcome-guide-title">RAN BUILD CALCULATOR</h2>
+        <p class="welcome-guide-subtitle">Quick guide before you start</p>
+
+        <ol class="welcome-guide-steps">
+            <li><strong>Pick your Class &amp; Episode</strong> — sets which skills and level caps apply.</li>
+            <li><strong>Adjust POW / VIT / DEX / INT</strong> — use the arrows or type values directly.</li>
+            <li><strong>Browse Pandaya Items</strong> — click a piece of gear to equip it and add its stats.</li>
+            <li><strong>Open Skills</strong> — spend Skill Points as you raise Character Level.</li>
+            <li><strong>Save Build</strong> — records your current stats, items and skills in Build Preview.</li>
+        </ol>
+
+        <label class="welcome-guide-dontshow">
+            <input type="checkbox" id="welcomeGuideDontShow">
+            Don't show this again
+        </label>
+
+        <button class="welcome-guide-start-btn" id="welcomeGuideStart">GOT IT, LET'S GO</button>
+
+    </div>
+
+</div>
+
+
 <!-- External JavaScript -->
 <script src="./script.js"></script>
 

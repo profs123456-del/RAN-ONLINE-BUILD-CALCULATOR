@@ -9256,3 +9256,123 @@ if (initialClassCurrentEl) {
 }
 
 renderSkillsList();
+
+/* =========================================
+   WELCOME GUIDE POPUP
+
+   Shown once per browser on first visit. If the user checks
+   "Don't show this again" and dismisses, a flag is saved in
+   localStorage so it stays hidden on future visits. Closing
+   without checking the box (X, backdrop click, or "Got it")
+   just hides it for this page load — it'll show again next
+   visit unless the checkbox was ticked.
+========================================= */
+
+const WELCOME_GUIDE_STORAGE_KEY = "ranBuildCalcGuideDismissed";
+
+function getWelcomeGuideOverlayEl() {
+
+    return document.getElementById("welcomeGuideOverlay");
+
+}
+
+function closeWelcomeGuide() {
+
+    const overlay = getWelcomeGuideOverlayEl();
+
+    if (!overlay) {
+
+        return;
+
+    }
+
+    const dontShowBox =
+        document.getElementById("welcomeGuideDontShow");
+
+    if (dontShowBox && dontShowBox.checked) {
+
+        try {
+
+            window.localStorage.setItem(WELCOME_GUIDE_STORAGE_KEY, "1");
+
+        } catch (err) {
+
+            /* localStorage unavailable (private mode, etc.) — fail
+               silently, guide just shows again next visit */
+
+        }
+
+    }
+
+    overlay.classList.remove("open");
+
+}
+
+function openWelcomeGuide() {
+
+    const overlay = getWelcomeGuideOverlayEl();
+
+    if (overlay) {
+
+        overlay.classList.add("open");
+
+    }
+
+}
+
+(function initWelcomeGuide() {
+
+    let alreadyDismissed = false;
+
+    try {
+
+        alreadyDismissed =
+            window.localStorage.getItem(WELCOME_GUIDE_STORAGE_KEY) === "1";
+
+    } catch (err) {
+
+        alreadyDismissed = false;
+
+    }
+
+    if (!alreadyDismissed) {
+
+        openWelcomeGuide();
+
+    }
+
+    const closeBtn =
+        document.getElementById("welcomeGuideClose");
+
+    if (closeBtn) {
+
+        closeBtn.addEventListener("click", closeWelcomeGuide);
+
+    }
+
+    const startBtn =
+        document.getElementById("welcomeGuideStart");
+
+    if (startBtn) {
+
+        startBtn.addEventListener("click", closeWelcomeGuide);
+
+    }
+
+    const overlay = getWelcomeGuideOverlayEl();
+
+    if (overlay) {
+
+        overlay.addEventListener("click", function(event) {
+
+            if (event.target === overlay) {
+
+                closeWelcomeGuide();
+
+            }
+
+        });
+
+    }
+
+})();
