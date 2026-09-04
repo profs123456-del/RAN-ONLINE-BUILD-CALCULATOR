@@ -142,6 +142,7 @@ const pandayaCategories = [
             { name: "Black Dragon Costume Pants (ran pinas)", image: "images/items/bdc_pants.png", stats: {  pow:2 }, slot: "pantsCostume" },
             { name: "Black Dragon Costume Gloves (ran pinas)", image: "images/items/bdc_gloves.png", stats: {  pow:1 }, slot: "glovesCostume" },
             { name: "Black Dragon Costume Shoes (ran pinas)", image: "images/items/bdc_shoes.png", stats: {  dex:2 }, slot: "shoesCostume" },
+            { name: "Advance_Necklace", image: "images/items/Advance_Necklace.png", stats: { pow: 3, dex: 3, int: 3 }, slot: "Rosary" },
         ]
     },
 
@@ -149,7 +150,8 @@ const pandayaCategories = [
         name: "VEHICLE",
         open: false,
         items: [
-            { name: "Sable Board", image:"images/items/sable_board.png", stats: { pow: 1, dex: 1, int:1 }, slot: "vehicle" }
+            { name: "Sable Board", image:"images/items/sable_board.png", stats: { pow: 1, dex: 1, int:1 }, slot: "vehicle" },
+            { name: "Trone Bike", image:"images/items/Tron_Bike.png", stats: { pow: 3, dex: 3, int:3 }, slot: "vehicle" }
         ]
     }
 
