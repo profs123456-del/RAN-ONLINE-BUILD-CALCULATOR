@@ -19,12 +19,12 @@ const pandayaCategories = [
                 name: "GROCER",
                 open: false,
                 items: [
-                    { name: "Elite Uniform cloth", image:"images/elite uniform cloth.png", stats: { int: 7 }, slot: "upper" },
-                    { name: "Elite uniform pants", image:"images/elite uniform pants.png", stats: { int: 7 }, slot: "pants" },
-                    { name: "Elite uniform shoes", image:"images/elite uniform shoes.png", stats: { int: 3 }, slot: "shoes" },
-                    { name: "Leonine uniform cloth", image:"images/leonine uniform cloth.png", stats: { int: 4 }, slot: "upper" },
-                    { name: "Leonine uniform pants", image: "images/leonine uniform pants.png", stats: { int: 4 }, slot: "pants" },
-                    { name: "Leonine uniform shoes", image:"images/leonine uniform shoes.png", stats: { int: 2 }, slot: "shoes" }
+                    { name: "Elite Uniform cloth", image:"images/items/elite_uniform_cloth.png", stats: { int: 7 }, slot: "upper" },
+                    { name: "Elite uniform pants", image:"images/items/elite_uniform_pants.png", stats: { int: 7 }, slot: "pants" },
+                    { name: "Elite uniform shoes", image:"images/items/elite_uniform_shoes.png", stats: { int: 3 }, slot: "shoes" },
+                    { name: "Leonine uniform cloth", image:"images/items/leonine_uniform_cloth.png", stats: { int: 4 }, slot: "upper" },
+                    { name: "Leonine uniform pants", image: "images/items/leonine_uniform_pants.png", stats: { int: 4 }, slot: "pants" },
+                    { name: "Leonine uniform shoes", image:"images/items/leonine_uniform_shoes.png", stats: { int: 2 }, slot: "shoes" }
                 ]
             },
 
@@ -32,10 +32,10 @@ const pandayaCategories = [
                 name: "ARCHER",
                 open: false,
                 items: [
-                    { name: "Enhanced Assassin Suit", image:"images/enhanced assassin suit.png", stats: { dex: 7 }, slot: "upper" },
-                    { name: "Enhanced Assassin Pants", image:"images/enhanced assassin pants.png", stats: { dex: 7 }, slot: "pants" },
-                    { name: "Enhanced Assassin Shoes", image:"images/enhanced assassin shoes.png", stats: { dex: 3 }, slot: "shoes" },
-                    { name: "Enhanced Assassin Gloves", image:"images/enhanced assassin gloves.png", stats: { dex: 3 }, slot: "gloves" }
+                    { name: "Enhanced Assassin Suit", image:"images/items/enhanced_assassin_suit.png", stats: { dex: 7 }, slot: "upper" },
+                    { name: "Enhanced Assassin Pants", image:"images/items/enhanced_assassin_pants.png", stats: { dex: 7 }, slot: "pants" },
+                    { name: "Enhanced Assassin Shoes", image:"images/items/enhanced_assassin_shoes.png", stats: { dex: 3 }, slot: "shoes" },
+                    { name: "Enhanced Assassin Gloves", image:"images/items/enhanced_assassin_gloves.png", stats: { dex: 3 }, slot: "gloves" }
                 ]
             },
 
@@ -43,10 +43,10 @@ const pandayaCategories = [
                 name: "BRAWLER",
                 open: false,
                 items: [
-                    { name: "Enhanced Mercenary Robe", image:"images/enhanced mercynary robe.png", stats: { dex: 7 }, slot: "upper" },
-                    { name: "Enhanced Mercenary Pants", image:"images/enhanced mercynary pants.png", stats: { dex: 7 }, slot: "pants" },
-                    { name: "Enhanced Mercenary Shoes", image:"images/enhanced mercynary shoes.png", stats: { dex: 3 }, slot: "shoes" },
-                    { name: "Enhanced Mercenary Gloves", image:"images/enhanced mercynary gloves.png", stats: { dex: 3 }, slot: "gloves" }
+                    { name: "Enhanced Mercenary Robe", image:"images/items/enhanced_mercynary_robe.png", stats: { dex: 7 }, slot: "upper" },
+                    { name: "Enhanced Mercenary Pants", image:"images/items/enhanced_mercynary_pants.png", stats: { dex: 7 }, slot: "pants" },
+                    { name: "Enhanced Mercenary Shoes", image:"images/items/enhanced_mercynary_shoes.png", stats: { dex: 3 }, slot: "shoes" },
+                    { name: "Enhanced Mercenary Gloves", image:"images/items/enhanced_mercynary_gloves.png", stats: { dex: 3 }, slot: "gloves" }
                 ]
             },
 
@@ -54,10 +54,10 @@ const pandayaCategories = [
                 name: "SWORDSMAN",
                 open: false,
                 items: [
-                    { name: "Enhanced Drifter Coat", image: "images/Enhanced Drifter Coat.png", stats: { dex: 7 }, slot: "upper" },
-                    { name: "Enhanced Drifter Pants", image:"images/Enhanced Drifter pants.png", stats: { dex: 7 }, slot: "pants" },
-                    { name: "Enhanced Drifter Shoes", image: "images/Enhanced Drifter shoes.png", stats: { dex: 3 }, slot: "shoes" },
-                    { name: "Enhanced Drifter Gloves", image:"images/Enhanced Drifter gloves.png", stats: { dex: 3 }, slot: "gloves" }
+                    { name: "Enhanced Drifter Coat", image: "images/items/Enhanced_Drifter_Coat.png", stats: { dex: 7 }, slot: "upper" },
+                    { name: "Enhanced Drifter Pants", image:"images/items/Enhanced_Drifter_pants.png", stats: { dex: 7 }, slot: "pants" },
+                    { name: "Enhanced Drifter Shoes", image: "images/items/Enhanced_Drifter_shoes.png", stats: { dex: 3 }, slot: "shoes" },
+                    { name: "Enhanced Drifter Gloves", image:"images/items/Enhanced_Drifter_gloves.png", stats: { dex: 3 }, slot: "gloves" }
                 ]
             }
 
@@ -68,28 +68,28 @@ const pandayaCategories = [
         name: "ACCESSORIES",
         open: false,
         items: [
-            { name: "Jade Ring lvl.120", image: "images/jade ring 120.png", stats: { dex: 7 }, slot: "ring" },
-            { name: "Jade Ring lvl.120", image: "images/jade ring 120.png", stats: { dex: 7 }, slot: "ring" },
-            { name: "Jade Ring lvl.80", image: "images/jade ring 120.png", stats: { dex: 5 }, slot: "ring" },
-            { name: "Jade Ring lvl.80", image: "images/jade ring 120.png", stats: { dex: 5 }, slot: "ring" },
-            { name: "Alloy Ring lvl.120", image: "images/alloy ring lvl 120 80.png", stats: { pow: 7 }, slot: "ring" },
-            { name: "Alloy Ring lvl.120", image: "images/alloy ring lvl 120 80.png", stats: { pow: 7 }, slot: "ring" },
-            { name: "Alloy Ring lvl.80", image: "images/alloy ring lvl 120 80.png", stats: { pow: 5 }, slot: "ring" },
-            { name: "Alloy Ring lvl.80", image: "images/alloy ring lvl 120 80.png", stats: { pow: 5 }, slot: "ring" },
-            { name: "Silver Ring lvl.120", image: "images/silver ring 120.png", stats: { int: 7 }, slot: "ring" },
-            { name: "Silver Ring lvl.120", image: "images/silver ring 120.png", stats: { int: 7 }, slot: "ring" },
-            { name: "Silver Ring lvl.80", image: "images/silver ring 120.png", stats: { int: 5}, slot: "ring" },
-            { name: "Silver Ring lvl.80", image: "images/silver ring 120.png", stats: { int: 5}, slot: "ring" },
-            { name: "Time Rosary Pow", image: "images/time rosa p d i.png", stats: { pow: 3}, slot: "rosary" },
-            { name: "Time Rosary Dex", image: "images/time rosa p d i.png", stats: { dex: 3}, slot: "rosary" },
-            { name: "Time Rosary Int", image: "images/time rosa p d i.png", stats: { int: 3}, slot: "rosary" },
-            { name: "Trinity Amulet Earring (ran pinas)", image: "images/trinity amulet.png", stats: { pow:2, dex:2, int: 2}, slot: "earring" },
-            { name: "Black Knife Ganil", image: "images/black knife ganil.png", stats: { pow:20, dex:20, int: 20}, slot: "ring" },
-            { name: "Saint Ring", image: "images/Saint ring.png", stats: { pow:30, dex:30, int: 30}, slot: "ring" },
-            { name: "Vanish Ring lvl.120", image: "images/vanish ring.png", stats: { hp: 25 }, slot: "ring" },
-            { name: "Vanish Ring lvl.120", image: "images/vanish ring.png", stats: { hp: 25 }, slot: "ring" },
-            { name: "Pandaya Bracelet 1D", image: "images/bracelet.png", stats: { pow: 5, dex: 5, int: 5 }, slot: "earring" },
-            { name: "Wrapped Labubu Black Belt", image: "images/labubu.png", stats: { pow: 10, dex: 10, int: 10 }, slot: "belt" },
+            { name: "Jade Ring lvl.120", image: "images/items/jade_ring.png", stats: { dex: 7 }, slot: "ring" },
+            { name: "Jade Ring lvl.120", image: "images/items/jade_ring.png", stats: { dex: 7 }, slot: "ring" },
+            { name: "Jade Ring lvl.80", image: "images/items/jade_ring.png", stats: { dex: 5 }, slot: "ring" },
+            { name: "Jade Ring lvl.80", image: "images/items/jade_ring.png", stats: { dex: 5 }, slot: "ring" },
+            { name: "Alloy Ring lvl.120", image: "images/items/alloy_ring.png", stats: { pow: 7 }, slot: "ring" },
+            { name: "Alloy Ring lvl.120", image: "images/items/alloy_ring.png", stats: { pow: 7 }, slot: "ring" },
+            { name: "Alloy Ring lvl.80", image: "images/items/alloy_ring.png", stats: { pow: 5 }, slot: "ring" },
+            { name: "Alloy Ring lvl.80", image: "images/items/alloy_ring.png", stats: { pow: 5 }, slot: "ring" },
+            { name: "Silver Ring lvl.120", image: "images/items/silver_ring.png", stats: { int: 7 }, slot: "ring" },
+            { name: "Silver Ring lvl.120", image: "images/items/silver_ring.png", stats: { int: 7 }, slot: "ring" },
+            { name: "Silver Ring lvl.80", image: "images/items/silver_ring.png", stats: { int: 5}, slot: "ring" },
+            { name: "Silver Ring lvl.80", image: "images/items/silver_ring.png", stats: { int: 5}, slot: "ring" },
+            { name: "Time Rosary Pow", image: "images/items/time_rosa_pow.png", stats: { pow: 3}, slot: "rosary" },
+            { name: "Time Rosary Dex", image: "images/items/time_rosa_dex.png", stats: { dex: 3}, slot: "rosary" },
+            { name: "Time Rosary Int", image: "images/items/time_rosa_int.png", stats: { int: 3}, slot: "rosary" },
+            { name: "Trinity Amulet Earring (ran pinas)", image: "images/items/trinity_amulet.png", stats: { pow:2, dex:2, int: 2}, slot: "earring" },
+            { name: "Black Knife Ganil", image: "images/items/black_knife_ganil.png", stats: { pow:20, dex:20, int: 20}, slot: "ring" },
+            { name: "Saint Ring", image: "images/items/Saint_ring.png", stats: { pow:30, dex:30, int: 30}, slot: "ring" },
+            { name: "Vanish Ring lvl.120", image: "images/items/vanish_ring.png", stats: { hp: 25 }, slot: "ring" },
+            { name: "Vanish Ring lvl.120", image: "images/items/vanish_ring.png", stats: { hp: 25 }, slot: "ring" },
+            { name: "Pandaya Bracelet 1D", image: "images/items/bracelet.png", stats: { pow: 5, dex: 5, int: 5 }, slot: "earring" },
+            { name: "Wrapped Labubu Black Belt", image: "images/items/labubu.png", stats: { pow: 10, dex: 10, int: 10 }, slot: "belt" },
         ]
     },
 
@@ -97,19 +97,19 @@ const pandayaCategories = [
         name: "WEAPON",
         open: false,
         items: [
-            { name: "Iron Gauntlet's Dex", image:"images/gaunt dex pow.png", stats: { dex: 5}, slot: "weapon" },
-            { name: "Heavy Iron Gauntlet's Pow", image: "images/gaunt dex pow.png", stats: { pow: 5}, slot: "weapon" },
-            { name: "Lite Iron Gauntlet's Int", image: "images/lite iron gauntlet's.png", stats: { int: 5}, slot: "weapon" },
-            { name: "Catling Sword Dex", image: "images/sword dex.png", stats: { dex: 5}, slot: "weapon" },
-            { name: "Giant Blade Pow", image: "images/blade pow.png", stats: { pow: 5}, slot: "weapon" },
-            { name: "Lite Arcane Sword Int", image: "images/sword int.png", stats: { int: 5}, slot: "weapon" },
-            { name: "Fusion Wood Bow Dex", image: "images/bow dex.png", stats: { dex: 5}, slot: "weapon" },
-            { name: "Fusion Long Bow Pow", image:"images/bow pow.png", stats: { pow: 5}, slot: "weapon" },
-            { name: "Competition Bow Int", image: "images/competition bow.png", stats: { int: 5}, slot: "weapon" },
-            { name: "Hunter Alloy Bow", image: "images/Hunter alloy bow.png", stats: { pow: 4}, slot: "weapon" },
-            { name: "Sky Wand", image: "images/sky wand.png", stats: { int: 5}, slot: "weapon" },
-            { name: "Heavy Gold Spear", image: "images/heavy gold spear.png", stats: { pow: 5}, slot: "weapon" },
-            { name: "Light Mechanical Sword", image: "images/light mechanical sword.png", stats: { pow: 5, int:5 }, slot: "weapon" }
+            { name: "Iron Gauntlet's Dex", image:"images/items/gaunt_dex_pow.png", stats: { dex: 5}, slot: "weapon" },
+            { name: "Heavy Iron Gauntlet's Pow", image: "images/items/gaunt_dex_pow.png", stats: { pow: 5}, slot: "weapon" },
+            { name: "Lite Iron Gauntlet's Int", image: "images/items/lite_iron_gauntlet's.png", stats: { int: 5}, slot: "weapon" },
+            { name: "Catling Sword Dex", image: "images/items/sword_dex.png", stats: { dex: 5}, slot: "weapon" },
+            { name: "Giant Blade Pow", image: "images/items/blade_pow.png", stats: { pow: 5}, slot: "weapon" },
+            { name: "Lite Arcane Sword Int", image: "images/items/sword_int.png", stats: { int: 5}, slot: "weapon" },
+            { name: "Fusion Wood Bow Dex", image: "images/items/bow_dex.png", stats: { dex: 5}, slot: "weapon" },
+            { name: "Fusion Long Bow Pow", image:"images/items/bow_pow.png", stats: { pow: 5}, slot: "weapon" },
+            { name: "Competition Bow Int", image: "images/items/competition_bow.png", stats: { int: 5}, slot: "weapon" },
+            { name: "Hunter Alloy Bow", image: "images/items/Hunter_alloy_bow.png", stats: { pow: 4}, slot: "weapon" },
+            { name: "Sky Wand", image: "images/items/sky_wand.png", stats: { int: 5}, slot: "weapon" },
+            { name: "Heavy Gold Spear", image: "images/items/heavy_gold_spear.png", stats: { pow: 5}, slot: "weapon" },
+            { name: "Light Mechanical Sword", image: "images/items/light_mechanical_sword.png", stats: { pow: 5, int:5 }, slot: "weapon" }
         ]
     },
 
@@ -128,7 +128,7 @@ const pandayaCategories = [
         name: "HEAD",
         open: false,
         items: [
-            { name: "Lover's Heart (ran pinas)", image:"images/lover's heart.png", stats: { pow: 7, dex: 7, int: 7 }, slot: "head" }
+            { name: "Lover's Heart (ran pinas)", image:"images/items/lover's_heart.png", stats: { pow: 7, dex: 7, int: 7 }, slot: "head" }
         ]
     },
 
@@ -137,11 +137,11 @@ const pandayaCategories = [
         open: false,
         items: [
 
-            { name: "Black Dragon Costume Head (ran pinas)", image: "images/bdc head.png", stats: {  int:1 }, slot: "headCostume" },
-            { name: "Black Dragon Costume Cloth (ran pinas)", image: "images/bdc cloth.png", stats: {  int:2 }, slot: "upperCostume" },
-            { name: "Black Dragon Costume Pants (ran pinas)", image: "images/bdc pants.png", stats: {  pow:2 }, slot: "pantsCostume" },
-            { name: "Black Dragon Costume Gloves (ran pinas)", image: "images/bdc gloves.png", stats: {  pow:1 }, slot: "glovesCostume" },
-            { name: "Black Dragon Costume Shoes (ran pinas)", image: "images/bdc shoes.png", stats: {  dex:2 }, slot: "shoesCostume" },
+            { name: "Black Dragon Costume Head (ran pinas)", image: "images/items/bdc_head.png", stats: {  int:1 }, slot: "headCostume" },
+            { name: "Black Dragon Costume Cloth (ran pinas)", image: "images/items/bdc_cloth.png", stats: {  int:2 }, slot: "upperCostume" },
+            { name: "Black Dragon Costume Pants (ran pinas)", image: "images/items/bdc_pants.png", stats: {  pow:2 }, slot: "pantsCostume" },
+            { name: "Black Dragon Costume Gloves (ran pinas)", image: "images/items/bdc_gloves.png", stats: {  pow:1 }, slot: "glovesCostume" },
+            { name: "Black Dragon Costume Shoes (ran pinas)", image: "images/items/bdc_shoes.png", stats: {  dex:2 }, slot: "shoesCostume" },
         ]
     },
 
@@ -149,7 +149,7 @@ const pandayaCategories = [
         name: "VEHICLE",
         open: false,
         items: [
-            { name: "Sable Board", image:"images/sable board.png", stats: { pow: 1, dex: 1, int:1 }, slot: "vehicle" }
+            { name: "Sable Board", image:"images/items/sable_board.png", stats: { pow: 1, dex: 1, int:1 }, slot: "vehicle" }
         ]
     }
 
@@ -2500,12 +2500,12 @@ const skillCategories = {
         { name: "Titan Will",tag:"Passive", rank: 3,pointNeeded: 0, type: "etc",icon: "images/skills/archer/tw.png",levelRequired: 30,levelRequiredByLevel: {2:50,3:70,4:90,5:110,6:130,7:150,8:170,9:190,} },
         { name: "Evasion", rank: 7,pointNeeded: 7, type: "etc",icon: "images/skills/brawler/evasion.png",levelRequired: 4,levelRequiredByLevel: {2:69,3:71,4:73,5:75,6:77,7:79,8:81,9:83,} },
         { name: "Lightspeed",rank: 12,pointNeeded: 12, type: "etc",icon: "images/skills/archer/ls.png",levelRequired: 117,levelRequiredByLevel: {2:119,3:121,4:123,5:125,6:127,7:129,8:131,9:133,} },
-        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
+        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
         { name: "Light Armor", rank: 15,pointNeeded: 1, type: "etc",icon: "images/skills/brawler/sc.png",levelRequired: 160,levelRequiredByLevel: {2:170,3:180,4:190} },
-        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
+        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
         { name: "Aegis of Evasion", rank: 16,pointNeeded: 0, type: "etc" ,icon: "images/skills/archer/aegis.png",levelRequired: 175,levelRequiredByLevel: {2:187,3:199}},
-        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
-        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
+        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
+        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
         
 
     ],
@@ -3462,12 +3462,12 @@ const skillCategories = {
         { name: "Regeneration", rank: 1,pointNeeded: 1, type: "etc",icon: "images/skills/archer/regen.png",levelRequired: 4 },
         { name: "Titan Will",tag:"Passive", rank: 3,pointNeeded: 0, type: "etc",icon: "images/skills/archer/tw.png",levelRequired: 30,levelRequiredByLevel: {2:50,3:70,4:90,5:110,6:130,7:150,8:170,9:190,} },
         { name: "Lightspeed",rank: 12,pointNeeded: 12, type: "etc",icon: "images/skills/archer/ls.png",levelRequired: 117,levelRequiredByLevel: {2:119,3:121,4:123,5:125,6:127,7:129,8:131,9:133,} },
-        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
+        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
         { name: "Light Armor", rank: 15,pointNeeded: 1, type: "etc",icon: "images/skills/swordsman/la.png",levelRequired: 160,levelRequiredByLevel: {2:170,3:180,4:190} },
-        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
+        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
         { name: "Aegis of Evasion", rank: 16,pointNeeded: 0, type: "etc" ,icon: "images/skills/archer/aegis.png",levelRequired: 175,levelRequiredByLevel: {2:187,3:199}},
-        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
-        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
+        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
+        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
 
             
         ],
@@ -3513,7 +3513,7 @@ const skillCategories = {
                 8: 41,
                 9: 43
             } },
-        { name: "Arrow Storm", rank: 5,pointNeeded: 5, type: "dex",icon: "images/skills/archer/arrow storm.png", requires: { dex: 127 }, levelRequired: 47, requiresSkill: { name: "Arrow Assault", level: 4 }
+        { name: "Arrow Storm", rank: 5,pointNeeded: 5, type: "dex",icon: "images/skills/archer/arrow-storm.png", requires: { dex: 127 }, levelRequired: 47, requiresSkill: { name: "Arrow Assault", level: 4 }
     ,
             requiresByLevel: {
                 2: { dex: 132 },
@@ -3874,7 +3874,7 @@ const skillCategories = {
          7: { pow: 140 },
          8: { pow: 145 },
          9: { pow: 150 }} },
-        { name: "Bow Slash", rank: 6, pointNeeded: 6, type: "pow",icon: "images/skills/archer/bow slash.png", levelRequired: 57,requires: { pow: 154 },
+        { name: "Bow Slash", rank: 6, pointNeeded: 6, type: "pow",icon: "images/skills/archer/bow-slash.png", levelRequired: 57,requires: { pow: 154 },
         requiresByLevel: 
         {2: { pow: 159 },
          3: { pow: 164 },
@@ -4343,12 +4343,12 @@ const skillCategories = {
         { name: "Regeneration", rank: 1,pointNeeded: 1, type: "etc",icon: "images/skills/archer/regen.png",levelRequired: 4 },
         { name: "Titan Will",tag:"Passive", rank: 3,pointNeeded: 0, type: "etc",icon: "images/skills/archer/tw.png",levelRequired: 30,levelRequiredByLevel: {2:50,3:70,4:90,5:110,6:130,7:150,8:170,9:190,} },
         { name: "Lightspeed",rank: 12,pointNeeded: 12, type: "etc",icon: "images/skills/archer/ls.png",levelRequired: 117,levelRequiredByLevel: {2:119,3:121,4:123,5:125,6:127,7:129,8:131,9:133,} },
-        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
+        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
         { name: "Chrono Shift", rank: 15,pointNeeded: 1, type: "etc",icon: "images/skills/archer/cs.png",levelRequired: 160,levelRequiredByLevel: {2:170,3:180,4:190} },
-        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
+        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
         { name: "Aegis of Evasion", rank: 16,pointNeeded: 0, type: "etc" ,icon: "images/skills/archer/aegis.png",levelRequired: 175,levelRequiredByLevel: {2:187,3:199}},
-        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
-        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
+        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
+        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
         
         
     ],
@@ -5447,12 +5447,12 @@ const skillCategories = {
             },
             { name: "Spear Mastery",tag:"Passive",rank: 1,pointNeeded: 1, type: "etc",icon: "images/skills/swordsman/bm.png",levelRequired: 10,levelRequiredByLevel: {2:20,3:30,4:40,5:50,6:60,7:70,8:80,9:90,} },
         { name: "Titan Will",tag:"Passive", rank: 3,pointNeeded: 0, type: "etc",icon: "images/skills/archer/tw.png",levelRequired: 30,levelRequiredByLevel: {2:50,3:70,4:90,5:110,6:130,7:150,8:170,9:190,} },
-        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
+        { name: "Titan Force",tag:"Passive", rank: 15,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-force.png",levelRequired: 191,levelRequiredByLevel: {2:192,3:193,4:194,5:195,6:196,7:197,8:198,9:199,} },
         { name: "Magnetic Shaft", rank: 15,pointNeeded: 1, type: "etc",icon: "images/skills/shaman/mag.png",levelRequired: 160,levelRequiredByLevel: {2:170,3:180,4:190} },
-        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
+        { name: "Titan Fill",tag:"Passive", rank: 16,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-fill.png",levelRequired: 201,levelRequiredByLevel: {2:202,3:203,4:204,5:205,6:206,7:207,8:208,9:209,} },
         { name: "Aegis of Evasion", rank: 16,pointNeeded: 0, type: "etc" ,icon: "images/skills/archer/aegis.png",levelRequired: 175,levelRequiredByLevel: {2:187,3:199}},
-        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
-        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
+        { name: "Titan's Mettle",tag:"Passive", rank: 22,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-mettle.png",levelRequired: 211,levelRequiredByLevel: {2:212,3:213,4:214,5:215,6:216,7:217,8:218,9:219,} },
+        { name: "Titan's Arcanum",tag:"Passive", rank: 23,pointNeeded: 0, type: "etc",icon: "images/skills/archer/titan-arcanum.png",levelRequired: 221,levelRequiredByLevel: {2:222,3:223,4:224,5:225,6:226,7:227,8:228,9:229,} },
             
             
             
