@@ -151,7 +151,7 @@ const pandayaCategories = [
         open: false,
         items: [
             { name: "Sable Board", image:"images/items/sable_board.png", stats: { pow: 1, dex: 1, int:1 }, slot: "vehicle" },
-            { name: "Trone Bike", image:"images/items/Tron_Bike.png", stats: { pow: 3, dex: 3, int:3 }, slot: "vehicle" }
+            { name: "Trone Bike", image:"images/items/Tron_Bike.png", stats: { pow: 5, dex: 5, int:5 }, slot: "vehicle" }
         ]
     }
 
