@@ -1614,7 +1614,7 @@ const skillCategories = {
     brawler: [ { name: "Heavy Punch", rank: 1,pointNeeded: 1, type: "dex", icon: "images/skills/brawler/hp.png",requires: { dex: 26 }, levelRequired: 7,
             requiresByLevel: {
                 2: { dex: 31 },
-                3: { pow: 11, dex: 14 },
+                3: { dex: 36 },
                 4: { dex: 41 },
                 5: { dex: 46 },
                 6: { dex: 51 },
@@ -4357,114 +4357,114 @@ const skillCategories = {
 
     shaman: [{ name: "Rapid Pierce", rank: 1,pointNeeded: 1, type: "pow", icon: "images/skills/shaman/rp.png",requires: { pow: 20 }, levelRequired: 7,
         requiresByLevel: {
-                2: { int: 25},
-                3: { int: 30},
-                4: { int: 35},
-                5: { int: 40},
-                6: { int: 40},
-                7: { int: 45},
-                8: { int: 50},
-                9: { int: 55}
+                2: { pow: 25},
+                3: { pow: 30},
+                4: { pow: 35},
+                5: { pow: 40},
+                6: { pow: 40},
+                7: { pow: 45},
+                8: { pow: 50},
+                9: { pow: 55}
             },
             },
             { name: "Drilling Strike", rank: 2,pointNeeded: 2, type: "pow", icon: "images/skills/shaman/ds.png",requires: { pow: 40 }, levelRequired: 17,
             requiresByLevel: {
-                2: { int: 45},
-                3: { int: 50},
-                4: { int: 55},
-                5: { int: 60},
-                6: { int: 65},
-                7: { int: 70},
-                8: { int: 75},
-                9: { int: 70}
+                2: { pow: 45},
+                3: { pow: 50},
+                4: { pow: 55},
+                5: { pow: 60},
+                6: { pow: 65},
+                7: { pow: 70},
+                8: { pow: 75},
+                9: { pow: 70}
             }
             },
             { name: "Spear Mastery", tag:"Passive", rank: 3,pointNeeded: 3, type: "pow", icon: "images/skills/shaman/sm.png",requires: { pow: 65 }, levelRequired: 27,
             requiresSkill: { name: "Rapid Pierce", level: 3 },
             requiresByLevel: {
-                2: { int: 70},
-                3: { int: 75},
-                4: { int: 80},
-                5: { int: 85},
-                6: { int: 90},
-                7: { int: 95},
-                8: { int: 100},
-                9: { int: 105}
+                2: { pow: 70},
+                3: { pow: 75},
+                4: { pow: 80},
+                5: { pow: 85},
+                6: { pow: 90},
+                7: { pow: 95},
+                8: { pow: 100},
+                9: { pow: 105}
             }
             },
             { name: "Enhanced Drilling Strike", rank: 4,pointNeeded: 4, type: "pow", icon: "images/skills/shaman/eds.png",requires: { pow: 90 }, levelRequired: 37,
             requiresSkill: { name: "Rapid Pierce", level: 3 },
             requiresByLevel: {
-                2: { int: 95},
-                3: { int: 100},
-                4: { int: 105},
-                5: { int: 110},
-                6: { int: 115},
-                7: { int: 120},
-                8: { int: 125},
-                9: { int: 130}
+                2: { pow: 95},
+                3: { pow: 100},
+                4: { pow: 105},
+                5: { pow: 110},
+                6: { pow: 115},
+                7: { pow: 120},
+                8: { pow: 125},
+                9: { pow: 130}
             }
             },
             { name: "Gift of Life", tag:"Passive", rank: 6,pointNeeded: 6, type: "pow", icon: "images/skills/shaman/gol.png",requires: { pow: 135 }, levelRequired: 57,
             requiresByLevel: {
-                2: { int: 140},
-                3: { int: 145},
-                4: { int: 150},
-                5: { int: 155},
-                6: { int: 160},
-                7: { int: 165},
-                8: { int: 170},
-                9: { int: 175}
+                2: { pow: 140},
+                3: { pow: 145},
+                4: { pow: 150},
+                5: { pow: 155},
+                6: { pow: 160},
+                7: { pow: 165},
+                8: { pow: 170},
+                9: { pow: 175}
             }
             },
             { name: "Lunar Catastrophe",  rank: 6,pointNeeded: 6, type: "pow", icon: "images/skills/shaman/lc.png",requires: { pow: 135 }, levelRequired: 57,
             requiresByLevel: {
-                2: { int: 140},
-                3: { int: 145},
-                4: { int: 150},
-                5: { int: 155},
-                6: { int: 160},
-                7: { int: 165},
-                8: { int: 170},
-                9: { int: 175}
+                2: { pow: 140},
+                3: { pow: 145},
+                4: { pow: 150},
+                5: { pow: 155},
+                6: { pow: 160},
+                7: { pow: 165},
+                8: { pow: 170},
+                9: { pow: 175}
             }
             },
             { name: "Radial Spear Strike",  rank: 8,pointNeeded: 8, type: "pow", icon: "images/skills/shaman/rss.png",requires: { pow: 180 }, levelRequired: 77,
             requiresSkill: {name:"Lunar Catastroph",level: 2 },
             requiresByLevel: {
-                2: { int: 140},
-                3: { int: 145},
-                4: { int: 150},
-                5: { int: 155},
-                6: { int: 160},
-                7: { int: 165},
-                8: { int: 170},
-                9: { int: 175}
+                2: { pow: 140},
+                3: { pow: 145},
+                4: { pow: 150},
+                5: { pow: 155},
+                6: { pow: 160},
+                7: { pow: 165},
+                8: { pow: 170},
+                9: { pow: 175}
             }
             },
             { name: "Spectral Pierce",  rank: 9,pointNeeded: 9, type: "pow", icon: "images/skills/shaman/sp.png",requires: { pow: 205 }, levelRequired: 87,
             requiresByLevel: {
-                2: { int: 210},
-                3: { int: 215},
-                4: { int: 220},
-                5: { int: 225},
-                6: { int: 230},
-                7: { int: 235},
-                8: { int: 240},
-                9: { int: 245}
+                2: { pow: 210},
+                3: { pow: 215},
+                4: { pow: 220},
+                5: { pow: 225},
+                6: { pow: 230},
+                7: { pow: 235},
+                8: { pow: 240},
+                9: { pow: 245}
             }
             },
             { name: "Shin Ryu Attack",  rank: 10,pointNeeded: 10, type: "pow", icon: "images/skills/shaman/sra.png",requires: { pow: 225 }, levelRequired: 97,
             requiresSkill: {name:"Enhance Drilling Strike",level: 3 },
             requiresByLevel: {
-                2: { int: 230},
-                3: { int: 235},
-                4: { int: 240},
-                5: { int: 245},
-                6: { int: 250},
-                7: { int: 255},
-                8: { int: 260},
-                9: { int: 265}
+                2: { pow: 230},
+                3: { pow: 235},
+                4: { pow: 240},
+                5: { pow: 245},
+                6: { pow: 250},
+                7: { pow: 255},
+                8: { pow: 260},
+                9: { pow: 265}
             },
             levelRequiredByLevel: {
                 2: 99,
@@ -4480,53 +4480,53 @@ const skillCategories = {
             { name: "Tremor",  rank: 11,pointNeeded: 11, type: "pow", icon: "images/skills/shaman/tr.png",requires: { pow: 250 }, levelRequired: 107,
             requiresSkill: {name:"Spectral Pierce",level: 2 },
             requiresByLevel: {
-                2: { int: 255},
-                3: { int: 260},
-                4: { int: 265},
-                5: { int: 270},
-                6: { int: 275},
-                7: { int: 280},
-                8: { int: 285},
-                9: { int: 290}
+                2: { pow: 255},
+                3: { pow: 260},
+                4: { pow: 265},
+                5: { pow: 270},
+                6: { pow: 275},
+                7: { pow: 280},
+                8: { pow: 285},
+                9: { pow: 290}
             }
             },
             { name: "Flight of the CRane",  rank: 12,pointNeeded: 12, type: "pow", icon: "images/skills/shaman/fc.png",requires: { pow: 275 }, levelRequired: 117,
             requiresSkill: {name:"Shin Ryu Attack",level: 2 },
             requiresByLevel: {
-                2: { int: 280},
-                3: { int: 285},
-                4: { int: 290},
-                5: { int: 295},
-                6: { int: 300},
-                7: { int: 305},
-                8: { int: 310},
-                9: { int: 315}
+                2: { pow: 280},
+                3: { pow: 285},
+                4: { pow: 290},
+                5: { pow: 295},
+                6: { pow: 300},
+                7: { pow: 305},
+                8: { pow: 310},
+                9: { pow: 315}
             }
             },
             { name: "Demon Spear Dance",  rank: 13,pointNeeded: 13, type: "pow", icon: "images/skills/shaman/dsd.png",requires: { pow: 295 }, levelRequired: 127,
             requiresSkill: {name:"Shin Ryu Attack",level: 2 },
             requiresByLevel: {
-                2: { int: 300},
-                3: { int: 305},
-                4: { int: 310},
-                5: { int: 315},
-                6: { int: 320},
-                7: { int: 325},
-                8: { int: 330},
-                9: { int: 335}
+                2: { pow: 300},
+                3: { pow: 305},
+                4: { pow: 310},
+                5: { pow: 315},
+                6: { pow: 320},
+                7: { pow: 325},
+                8: { pow: 330},
+                9: { pow: 335}
             }
             },
             { name: "Cresent Moon Raging Winds",  rank: 14,pointNeeded: 14, type: "pow", icon: "images/skills/shaman/cmr.png",requires: { pow: 345 }, levelRequired: 147,
             requiresSkill: {name:"Demon Spear Dance",level: 2 },
             requiresByLevel: {
-                2: { int: 350},
-                3: { int: 355},
-                4: { int: 360},
-                5: { int: 365},
-                6: { int: 370},
-                7: { int: 375},
-                8: { int: 380},
-                9: { int: 385}
+                2: { pow: 350},
+                3: { pow: 355},
+                4: { pow: 360},
+                5: { pow: 365},
+                6: { pow: 370},
+                7: { pow: 375},
+                8: { pow: 380},
+                9: { pow: 385}
             },
             levelRequiredByLevel: {
                 2: 149,
@@ -4542,14 +4542,14 @@ const skillCategories = {
             { name: "Shadow Spear",  rank: 15,pointNeeded: 15, type: "pow", icon: "images/skills/shaman/ss.png",requires: { pow: 368 }, levelRequired: 157,
             requiresSkill: {name:"Cresent Moon Raging Winds",level: 3 },
             requiresByLevel: {
-                2: { int: 373},
-                3: { int: 378},
-                4: { int: 383},
-                5: { int: 388},
-                6: { int: 393},
-                7: { int: 398},
-                8: { int: 403},
-                9: { int: 408}
+                2: { pow: 373},
+                3: { pow: 378},
+                4: { pow: 383},
+                5: { pow: 388},
+                6: { pow: 393},
+                7: { pow: 398},
+                8: { pow: 403},
+                9: { pow: 408}
             },
             levelRequiredByLevel: {
                 2: 159,
@@ -4565,27 +4565,27 @@ const skillCategories = {
             { name: "Dance of Phoenix",  rank: 16,pointNeeded: 16, type: "pow", icon: "images/skills/shaman/dop.png",requires: { pow: 393 }, levelRequired: 167,
             requiresSkill: {name:"Tremor",level: 3 },
             requiresByLevel: {
-                2: { int: 398},
-                3: { int: 403},
-                4: { int: 408},
-                5: { int: 413},
-                6: { int: 418},
-                7: { int: 423},
-                8: { int: 428},
-                9: { int: 433}
+                2: { pow: 398},
+                3: { pow: 403},
+                4: { pow: 408},
+                5: { pow: 413},
+                6: { pow: 418},
+                7: { pow: 423},
+                8: { pow: 428},
+                9: { pow: 433}
             },
             },
             { name: "Impale",  rank: 17,pointNeeded: 17, type: "pow", icon: "images/skills/shaman/impale.png",requires: { pow: 413 }, levelRequired: 177,
             requiresSkill: {name:"Dance of Phoenix",level: 3 },
             requiresByLevel: {
-                2: { int: 418},
-                3: { int: 423},
-                4: { int: 428},
-                5: { int: 433},
-                6: { int: 438},
-                7: { int: 443},
-                8: { int: 448},
-                9: { int: 453}
+                2: { pow: 418},
+                3: { pow: 423},
+                4: { pow: 428},
+                5: { pow: 433},
+                6: { pow: 438},
+                7: { pow: 443},
+                8: { pow: 448},
+                9: { pow: 453}
             },
             levelRequiredByLevel: {
                 2: 179,
@@ -4601,14 +4601,14 @@ const skillCategories = {
             { name: "Executioner",  rank: 18,pointNeeded: 18, type: "pow", icon: "images/skills/shaman/ex.png",requires: { pow: 436 }, levelRequired: 187,
             requiresSkill: {name:"Impale",level: 3 },
             requiresByLevel: {
-                2: { int: 441},
-                3: { int: 446},
-                4: { int: 451},
-                5: { int: 456},
-                6: { int: 461},
-                7: { int: 466},
-                8: { int: 471},
-                9: { int: 476}
+                2: { pow: 441},
+                3: { pow: 446},
+                4: { pow: 451},
+                5: { pow: 456},
+                6: { pow: 461},
+                7: { pow: 466},
+                8: { pow: 471},
+                9: { pow: 476}
             },
             levelRequiredByLevel: {
                 2: 189,
@@ -4624,14 +4624,14 @@ const skillCategories = {
             { name: "Nine-Spectral Demon Spear",  rank: 21,pointNeeded: 21, type: "pow", icon: "images/skills/shaman/ns.png",requires: { pow: 458 }, levelRequired: 197,
             requiresSkill: {name:"Shadow Spear",level: 4 },
             requiresByLevel: {
-                2: { int: 463},
-                3: { int: 468},
-                4: { int: 473},
-                5: { int: 478},
-                6: { int: 483},
-                7: { int: 488},
-                8: { int: 493},
-                9: { int: 498}
+                2: { pow: 463},
+                3: { pow: 468},
+                4: { pow: 473},
+                5: { pow: 478},
+                6: { pow: 483},
+                7: { pow: 488},
+                8: { pow: 493},
+                9: { pow: 498}
             },
             levelRequiredByLevel: {
                 2: 199,
@@ -4647,14 +4647,14 @@ const skillCategories = {
             { name: "Schorching Strike",  rank: 22,pointNeeded: 22, type: "pow", icon: "images/skills/shaman/scs.png",requires: { pow: 485 }, levelRequired: 207,
             requiresSkill: {name:"Shadow Spear",level: 4 },
             requiresByLevel: {
-                2: { int: 489},
-                3: { int: 494},
-                4: { int: 499},
-                5: { int: 503},
-                6: { int: 508},
-                7: { int: 513},
-                8: { int: 518},
-                9: { int: 522}
+                2: { pow: 489},
+                3: { pow: 494},
+                4: { pow: 499},
+                5: { pow: 503},
+                6: { pow: 508},
+                7: { pow: 513},
+                8: { pow: 518},
+                9: { pow: 522}
             },
             levelRequiredByLevel: {
                 2: 209,
@@ -5095,7 +5095,7 @@ const skillCategories = {
             },
             },
             { name: "Inspire", rank: 3,pointNeeded: 3, type: "int", icon: "images/skills/shaman/ins.png",requires: { int: 109 }, levelRequired: 27,
-            requiresSkill: {name: "Vampiric Attak", level: 3 },
+            requiresSkill: {name: "Vampiric Attack", level: 3 },
             requiresByLevel: {
                 2: { int: 115},
                 3: { int: 120},
@@ -5467,35 +5467,35 @@ const skillCategories = {
     gunner: [],
 
     extreme: [ 
-             { name: "Side Kick", rank: 1, pointNeeded: 1, type: "brawler", icon: "images/skills/extreme/sk.png",requires: { pow: 15 , dex: 18 }, levelRequired: 7,
+             { name: "Side Kick", rank: 1, pointNeeded: 1, type: "etc", originClass: "brawler", icon: "images/skills/extreme/sk.png",requires: { pow: 15 , dex: 18 }, levelRequired: 7,
              requiresSkill: {name: "Heavy Punch", level: 2 },
              requiresByLevel: {
                 2: { pow: 17, dex: 20 },
                 3: { pow: 19, dex: 22 },
                 4: { pow: 21, dex: 24}, }
              },
-            { name: "Heavy Punch", rank: 1, pointNeeded: 1, type: "brawler", icon: "images/skills/extreme/hp.png",requires: { pow: 11 , dex: 14 }, levelRequired: 3,
+            { name: "Heavy Punch", rank: 1, pointNeeded: 1, type: "etc", originClass: "brawler", icon: "images/skills/extreme/hp.png",requires: { pow: 11 , dex: 14 }, levelRequired: 3,
             requiresByLevel: {
                 2: { pow: 13, dex: 16 },
                 3: { pow: 15, dex: 18 },
                 4: { pow: 17, dex: 20}, }
              },
-             { name: "Tokkan Punch", rank: 2, pointNeeded: 2, type: "brawler", icon: "images/skills/extreme/tk.png",requires: { pow: 25 , dex: 28 }, levelRequired: 17,
+             { name: "Tokkan Punch", rank: 2, pointNeeded: 2, type: "etc", originClass: "brawler", icon: "images/skills/extreme/tk.png",requires: { pow: 25 , dex: 28 }, levelRequired: 17,
              requiresSkill: {name: "Heavy Punch", level: 4 },
              requiresByLevel: {
                 2: { pow: 27, dex: 30 },
                 3: { pow: 29, dex: 32 },
                 4: { pow: 31, dex: 34}, }
              },
-             { name: "Double Attack", rank: 3, pointNeeded: 3, type: "brawler", icon: "images/skills/extreme/da.png",requires: { pow: 31 , dex: 35 }, levelRequired: 27,
+             { name: "Double Attack", rank: 3, pointNeeded: 3, type: "etc", originClass: "brawler", icon: "images/skills/extreme/da.png",requires: { pow: 31 , dex: 35 }, levelRequired: 27,
              requiresSkill: {name: "Heavy Punch", level: 4 },
              requiresByLevel: {
                 2: { pow: 35, dex: 39 },
                 3: { pow: 37, dex: 41 },
                 4: { pow: 41, dex: 45}, }
              },
-            { name: "Fist Mastery", tag:"Passive", rank: 3, pointNeeded: 1, type: "brawler", icon: "images/skills/extreme/fm.png", levelRequired: 30, },
-            { name: "Titan Will",tag:"Passive", rank: 3,pointNeeded: 0, type: "brawler",icon: "images/skills/extreme/tw.png",levelRequired: 30,levelRequiredByLevel: {2:50,3:70,4:90,5:110,6:130,7:150,8:170,9:190,} }, 
+            { name: "Fist Mastery", tag:"Passive", rank: 1, pointNeeded: 1, type: "etc", originClass: "brawler", icon: "images/skills/extreme/fm.png", levelRequired: 10, levelRequiredByLevel: {2:20,3:30,4:40,5:50,6:60,7:70,8:80,9:90,} },
+            { name: "Titan Will",tag:"Passive", rank: 3,pointNeeded: 0, type: "etc", originClass: "brawler",icon: "images/skills/extreme/tw.png",levelRequired: 30,levelRequiredByLevel: {2:50,3:70,4:90,5:110,6:130,7:150,8:170,9:190,} }, 
             
 
                 
@@ -6090,10 +6090,19 @@ const SKILL_TYPE_TABS_DEFAULT = [
 
 /* Extreme's skills aren't grouped by stat type — they're grouped by
    which base class (Brawler/Swordsman/Archer/Shaman) the skill
-   originated from, so its 4 tabs swap to those instead. Give
-   Extreme skills a `type` of "brawler"/"swordsman"/"archer"/"shaman"
-   in skillCategories.extreme and this filtering just works, same as
-   dex/pow/int/etc does for every other class. */
+   originated from, so its 4 tabs swap to those instead. This used to
+   be done by overloading a skill's `type` field with "brawler" /
+   "swordsman" / "archer" / "shaman" instead of a real stat — which
+   meant the SAME field name meant two different things depending on
+   which class you were looking at, and made it far too easy to
+   copy-paste a normal class's stat-typed skill data into Extreme (or
+   vice versa) without anything catching it.
+
+   Now Extreme skills keep `type` as an actual stat category (pow/
+   dex/int/etc, same meaning as every other class) and use a
+   separate `originClass` field ("brawler"/"swordsman"/"archer"/
+   "shaman") purely for which of these 4 tabs they show under. The
+   two concepts never collide again. */
 
 const SKILL_TYPE_TABS_EXTREME = [
     { type: "brawler", label: "BRAWLER" },
@@ -7845,9 +7854,19 @@ function renderSkillsList() {
 
     allSkills.forEach(function(skill, index) {
 
-        const type = skill.type || "etc";
+        /* Extreme groups its skills by which base class they
+           originated from (skill.originClass), never by stat type —
+           every other class groups by skill.type (dex/pow/int/etc).
+           Two separate fields now, so there's no chance of Extreme's
+           grouping value and a normal class's stat value getting
+           mixed up the way they could when both lived in `type`. */
 
-        if (type !== activeSkillType) {
+        const filterKey =
+            activeSkillClass === "extreme" ?
+                (skill.originClass || "etc") :
+                (skill.type || "etc");
+
+        if (filterKey !== activeSkillType) {
 
             return;
 
