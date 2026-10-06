@@ -178,6 +178,8 @@ const INVENTORY_SLOT_GROUPS = {
     rosaryCostume:  ["rosary1"],
     earring:        ["earring2"],
     earringCostume: ["earring1"],
+    belt:           ["belt2"],
+    beltCostume:    ["belt1"],
     ring:           ["ring2", "ring4"],
     ringCostume:    ["ring1", "ring3"],
     head:           ["head2"],
