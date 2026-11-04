@@ -681,19 +681,16 @@ function updateInventorySlots() {
    hidden "manual" layer:
 
    - GREEN (+xx)  = statManualAllocated[key]
-                    + pandayaTotals[key]
-                    (points the user has spent
-                    from the Total Point pool,
-                    PLUS the bonus from every
-                    selected Pandaya item — both
-                    show up in the green box)
+                    (only the points the user has
+                    spent / typed — NOT Pandaya)
 
    - LEFT (main / white / total)
                   = statManualBase[key]
                     + green value above
-                    (green already folds in the
-                    Pandaya bonus, so it is not
-                    added a second time here)
+                    + pandayaTotals[key]
+                    (Pandaya gear bonus is added
+                    on top, so Pandaya 7 + typed
+                    +150 = 157)
 
    Typing directly into either visible input
    updates that input's own manual layer (so
@@ -728,7 +725,7 @@ function getStatInputs(key) {
 
 function getGreenValue(key) {
 
-    return (statManualAllocated[key] || 0) + (pandayaTotals[key] || 0);
+    return (statManualAllocated[key] || 0);
 
 }
 
@@ -740,7 +737,9 @@ function getGreenValue(key) {
 
 function getBaseValue(key) {
 
-    return (statManualBase[key] || 0) + getGreenValue(key);
+    return (statManualBase[key] || 0) +
+        getGreenValue(key) +
+        (pandayaTotals[key] || 0);
 
 }
 
@@ -1054,11 +1053,15 @@ STAT_KEYS.forEach(function(key) {
                was typed to get the MANUAL points being allocated
                — same meaning as clicking the ▲▼ steppers. */
 
-            const pandayaPortion = pandayaTotals[key] || 0;
+            /* The green box is the player's OWN added stat only —
+               Pandaya gear is added on top in the main total
+               (e.g. Pandaya +7, typed +150 -> total 157). */
+
+            const pandayaPortion = 0;
 
             const previousManual = statManualAllocated[key] || 0;
 
-            let newManual = typed - pandayaPortion;
+            let newManual = typed;
 
             /* Can't allocate negative manual points — the box can
                never read below the Pandaya bonus that's already
@@ -1126,7 +1129,8 @@ STAT_KEYS.forEach(function(key) {
                already includes the Pandaya gear bonus, so it's
                only subtracted once here) */
 
-            statManualBase[key] = typed - getGreenValue(key);
+            statManualBase[key] =
+                typed - getGreenValue(key) - (pandayaTotals[key] || 0);
 
             /* Editing Vit's base directly changes what HP's
                formula portion should be. If a manual HP offset is
