@@ -4461,7 +4461,7 @@ const skillCategories = {
             }
             },
             { name: "Shin Ryu Attack",  rank: 10,pointNeeded: 10, type: "pow", icon: "images/skills/shaman/sra.png",requires: { pow: 225 }, levelRequired: 97,
-            requiresSkill: {name:"Enhance Drilling Strike",level: 3 },
+            requiresSkill: {name:"Enhanced Drilling Strike",level: 3 },
             requiresByLevel: {
                 2: { pow: 230},
                 3: { pow: 235},
