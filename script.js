@@ -4432,7 +4432,7 @@ const skillCategories = {
             }
             },
             { name: "Radial Spear Strike",  rank: 8,pointNeeded: 8, type: "pow", icon: "images/skills/shaman/rss.png",requires: { pow: 180 }, levelRequired: 77,
-            requiresSkill: {name:"Lunar Catastroph",level: 2 },
+            requiresSkill: {name:"Lunar Catastrophe",level: 2 },
             requiresByLevel: {
                 2: { pow: 140},
                 3: { pow: 145},
@@ -5223,7 +5223,7 @@ const skillCategories = {
                 9: { int: 291}
             },
             },
-            { name: "Massive haste",rank: 9,pointNeeded: 9, type: "int", icon: "images/skills/shaman/mh.png",requires: { int: 274 }, levelRequired: 87,
+            { name: "Massive Haste",rank: 9,pointNeeded: 9, type: "int", icon: "images/skills/shaman/mh.png",requires: { int: 274 }, levelRequired: 87,
             requiresSkill: {name: "Haste", level: 3 },
             requiresByLevel: {
                 2: { int: 280},
