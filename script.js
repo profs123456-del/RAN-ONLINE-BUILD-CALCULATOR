@@ -4686,7 +4686,7 @@ const skillCategories = {
             },
             },
             { name: "Weaken", rank: 2,pointNeeded: 2, type: "dex", icon: "images/skills/shaman/weak.png",requires: { int: 82 }, levelRequired: 17,
-            requiresSkill: {name: "Inceneration", level: 2 },
+            requiresSkill: {name: "Incineration", level: 2 },
             requiresByLevel: {
                 2: { int: 88},
                 3: { int: 93},
