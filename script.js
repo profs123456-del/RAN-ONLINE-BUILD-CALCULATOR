@@ -3606,7 +3606,7 @@ const skillCategories = {
                 8: 83,
                 9: 85
             } },
-        { name: "Arrow of Armaggedon", rank: 9,pointNeeded: 9, type: "dex",icon: "images/skills/archer/aa.png", requires: { dex: 226 }, levelRequired: 87, requiresSkill: { name: "Arrow Storm", level: 3 },
+        { name: "Arrow of Armaggedon", rank: 9,pointNeeded: 9, type: "dex",icon: "images/skills/archer/AA.png", requires: { dex: 226 }, levelRequired: 87, requiresSkill: { name: "Arrow Storm", level: 3 },
     requiresByLevel: {
                 2: { dex: 231 },
                 3: { dex: 236 },
@@ -3724,7 +3724,7 @@ const skillCategories = {
                 8: 181,
                 9: 183
             } },
-        { name: "Rising Assault", rank: 17,pointNeeded: 17, type: "dex",icon: "images/skills/archer/ra.png", requires: { dex: 449 }, levelRequired: 177, requiresSkill: { name: "Arrow of Destructive Lightning", level: 3 },
+        { name: "Rising Assault", rank: 17,pointNeeded: 17, type: "dex",icon: "images/skills/archer/RA.png", requires: { dex: 449 }, levelRequired: 177, requiresSkill: { name: "Arrow of Destructive Lightning", level: 3 },
     requiresByLevel: {
                 2: { dex: 454 },
                 3: { dex: 459},
@@ -3745,7 +3745,7 @@ const skillCategories = {
                 8: 191,
                 9: 193
             } },
-        { name: "Wind Slicer", rank: 18,pointNeeded: 18, type: "dex",icon: "images/skills/archer/ws.png", requires: { dex: 473 }, levelRequired: 187, requiresSkill: { name: "Rising Assault", level: 3 },
+        { name: "Wind Slicer", rank: 18,pointNeeded: 18, type: "dex",icon: "images/skills/archer/WS.png", requires: { dex: 473 }, levelRequired: 187, requiresSkill: { name: "Rising Assault", level: 3 },
     requiresByLevel: {
                 2: { dex: 478 },
                 3: { dex: 483},
@@ -3766,7 +3766,7 @@ const skillCategories = {
                 8: 201,
                 9: 203
             } },
-        { name: "Emperor's Wrath", rank: 21,pointNeeded: 21, type: "dex",icon: "images/skills/archer/ew.png", requires: { dex: 498 }, levelRequired: 197, requiresSkill: { name: "Guardian Shot", level: 4 },requiresByLevel: {
+        { name: "Emperor's Wrath", rank: 21,pointNeeded: 21, type: "dex",icon: "images/skills/archer/EW.png", requires: { dex: 498 }, levelRequired: 197, requiresSkill: { name: "Guardian Shot", level: 4 },requiresByLevel: {
                 2: { dex: 503 },
                 3: { dex: 508},
                 4: { dex: 513},
